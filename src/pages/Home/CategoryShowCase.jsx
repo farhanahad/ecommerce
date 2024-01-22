@@ -12,7 +12,7 @@ const ProductData = [
     title: "Thermometer",
     //author: "assets/images/course/author/01.jpg",
     brand: "Braun Thermoscan",
-    price: "৳199.00",
+    price: "৳110.00",
     id: 1,
   },
   {
@@ -21,7 +21,7 @@ const ProductData = [
     title: "Stethoscope",
     author: "assets/images/course/author/02.jpg",
     brand: "3M Littmann",
-    price: "৳199.00",
+    price: "৳2000.00",
     id: 2,
   },
   {
@@ -30,7 +30,7 @@ const ProductData = [
     title: "Blood Pressure Machine",
     author: "src/assets/images/categoryTab/brand/apple.png",
     brand: "PROCARE",
-    price: "৳199.00",
+    price: "৳2000.00",
     id: 3,
   },
   {
@@ -39,7 +39,7 @@ const ProductData = [
     title: "Electric Hot Water Bag",
     author: "assets/images/course/author/04.jpg",
     brand: " Procare",
-    price: "৳199.00",
+    price: "৳600.00",
     id: 4,
   },
   {
@@ -48,7 +48,7 @@ const ProductData = [
     title: "IV Cannula",
     author: "assets/images/course/author/05.jpg",
     brand: "Procare",
-    price: "৳199.00",
+    price: "৳20.00",
     id: 5,
   },
   {
@@ -57,7 +57,7 @@ const ProductData = [
     title: "Scissors",
     author: "assets/images/course/author/06.jpg",
     brand: "Procare",
-    price: "৳199.00",
+    price: "৳120.00",
     id: 6,
   },
   {

@@ -71,7 +71,7 @@ const ProductData = [
   },
   {
     imgUrl: "https://i.ibb.co/85P0n57/istockphoto-547422364-170667a.webp",
-    cate: "Surge Textile ",
+    cate: "Surge Textile",
     title: "Bandage",
     author: "assets/images/course/author/02.jpg",
     brand: "Hospitals Store",
@@ -103,16 +103,16 @@ const CategoryShowCase = () => {
           <div className="course-filter-group">
             <ul className="lab-ul">
               <li onClick={() => setItems(ProductData)}>All</li>
-              <li onClick={() => filterItem("doctors-chamber")}>
+              <li onClick={() => filterItem("Doctors Chamber")}>
                 Doctors Chamber
               </li>
-              <li onClick={() => filterItem("medical-device")}>
+              <li onClick={() => filterItem("Medical Device")}>
                 Medical Device
               </li>
-              <li onClick={() => filterItem("surge-elastic-room")}>
+              <li onClick={() => filterItem("Surge Elastic Room")}>
                 Surge Elastic Room
               </li>
-              <li onClick={() => filterItem("surge-textile-materials")}>
+              <li onClick={() => filterItem("Surge Textile")}>
                 Surge Textile Materials
               </li>
             </ul>

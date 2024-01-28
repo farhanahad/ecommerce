@@ -8,8 +8,8 @@ const ProductDisplay = ({ item }) => {
   const { id, img, price, name, quantity, seller, desc } = item;
   const [prequantity, setQuantity] = useState(quantity);
   const [coupon, setCoupon] = useState("");
-  const [size, setSize] = useState("Select Size");
-  const [color, setColor] = useState("Select Color");
+  //const [size, setSize] = useState("Select Size");
+  //const [color, setColor] = useState("Select Color");
 
   const handleDecrease = () => {
     if (prequantity > 1) {
@@ -21,13 +21,13 @@ const ProductDisplay = ({ item }) => {
     setQuantity(prequantity + 1);
   };
 
-  const handleSizeChange = (e) => {
-    setSize(e.target.value);
-  };
+  // const handleSizeChange = (e) => {
+  //   setSize(e.target.value);
+  // };
 
-  const handleColorChange = (e) => {
-    setColor(e.target.value);
-  };
+  // const handleColorChange = (e) => {
+  //   setColor(e.target.value);
+  // };
 
   const handleSubmit = (e) => {
     e.preventDefault();
@@ -39,9 +39,9 @@ const ProductDisplay = ({ item }) => {
       name: name,
       price: price,
       quantity: prequantity,
-      size: size,
-      color: color,
-      coupon: coupon,
+      // size: size,
+      // color: color,
+      // coupon: coupon,
     };
 
     // Retrieve existing cart items from local storage or initialize an empty array
@@ -65,9 +65,9 @@ const ProductDisplay = ({ item }) => {
 
     // Reset form fields and quantity
     setQuantity(1);
-    setSize("Select Size");
-    setColor("Select Color");
-    setCoupon("");
+    // setSize("Select Size");
+    // setColor("Select Color");
+    // setCoupon("");
 
     // You can add further logic, such as displaying a confirmation message.
   };
@@ -76,22 +76,22 @@ const ProductDisplay = ({ item }) => {
     <div>
       <div>
         <h4>{name}</h4>
-        <p className="rating">
+        {/* <p className="rating">
           <i className="icofont-star"></i>
           <i className="icofont-star"></i>
           <i className="icofont-star"></i>
           <i className="icofont-star"></i>
           <i className="icofont-star"></i>
           (3 review)
-        </p>
-        <h4>${price}</h4>
+        </p> */}
+        <h4>৳{price}</h4>
         <h6>{seller}</h6>
         <p>{desc}</p>
       </div>
       {/* Single Product Cart Component here */}
       <div>
         <form onSubmit={handleSubmit}>
-          <div className="select-product size">
+          {/* <div className="select-product size">
             <select value={size} onChange={handleSizeChange}>
               <option>Select Size</option>
               <option>SM</option>
@@ -112,7 +112,7 @@ const ProductDisplay = ({ item }) => {
               <option>Blue</option>
             </select>
             <i className="icofont-rounded-down"></i>
-          </div>
+          </div> */}
           <div className="cart-plus-minus">
             <div onClick={handleDecrease} className="dec qtybutton">
               -
@@ -129,11 +129,11 @@ const ProductDisplay = ({ item }) => {
             </div>
           </div>
           <div className="discount-code mb-2">
-            <input
+            {/* <input
               type="text"
               placeholder="Enter Discount Code"
               onChange={(e) => setCoupon(e.target.value)}
-            />
+            /> */}
           </div>
           <button type="submit" className="lab-btn">
             <span>Add To Cart</span>

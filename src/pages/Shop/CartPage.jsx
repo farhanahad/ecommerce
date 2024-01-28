@@ -91,7 +91,7 @@ const CartPage = () => {
                           <Link to="/shop-single">{item.name}</Link>
                         </div>
                       </td>
-                      <td className="cat-price">${item.price}</td>
+                      <td className="cat-price">৳{item.price}</td>
                       <td className="cat-quantity">
                         <div className="cart-plus-minus">
                           <div
@@ -115,7 +115,7 @@ const CartPage = () => {
                         </div>
                       </td>
                       <td className="cat-toprice">
-                        ${calculateTotalPrice(item)}
+                        ৳{calculateTotalPrice(item)}
                       </td>
                       <td className="cat-edit">
                         <a href="#" onClick={() => handleRemoveItem(item)}>
@@ -133,13 +133,13 @@ const CartPage = () => {
               {/* checkout box */}
               <div className="cart-checkout-box">
                 <form className="coupon" action="/">
-                  <input
+                  {/* <input
                     type="text"
                     name="coupon"
                     placeholder="Coupon Code..."
                     className="cart-page-input-text"
                   />
-                  <input type="submit" value="Apply Coupon" />
+                  <input type="submit" value="Apply Coupon" /> */}
                 </form>
                 <form className="cart-checkout" action="/">
                   <input type="submit" value="Update Cart" />
@@ -156,38 +156,38 @@ const CartPage = () => {
                   {/* shipping  */}
                   <div className="col-md-6 col-12">
                     <div className="calculate-shiping">
-                      <h3>Calculate Shipping</h3>
+                      {/* <h3>Calculate Shipping</h3> */}
                       <div className="outline-select">
-                        <select>
+                        {/* <select>
                           <option value="volvo">United Kingdom (UK)</option>
                           <option value="saab">Bangladesh</option>
                           <option value="saab">Pakisthan</option>
                           <option value="saab">India</option>
                           <option value="saab">Nepal</option>
-                        </select>
-                        <span className="select-icon">
+                        </select> */}
+                        {/* <span className="select-icon">
                           <i className="icofont-rounded-down"></i>
-                        </span>
+                        </span> */}
                       </div>
                       <div className="outline-select shipping-select">
-                        <select>
+                        {/* <select>
                           <option value="volvo">State/Country</option>
                           <option value="saab">Dhaka</option>
                           <option value="saab">Benkok</option>
                           <option value="saab">Kolkata</option>
                           <option value="saab">Kapasia</option>
-                        </select>
-                        <span className="select-icon">
+                        </select> */}
+                        {/* <span className="select-icon">
                           <i className="icofont-rounded-down"></i>
-                        </span>
+                        </span> */}
                       </div>
-                      <input
+                      {/* <input
                         type="text"
                         name="coupon"
                         placeholder="Postcode/ZIP"
                         className="cart-page-input-text"
-                      />
-                      <button type="submit">Update Total</button>
+                      /> */}
+                      {/* <button type="submit">Update Total</button> */}
                     </div>
                   </div>
 

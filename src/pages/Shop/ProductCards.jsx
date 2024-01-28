@@ -59,10 +59,8 @@ const ProductCards = ({ products, GridList }) => {
             </div>
             <div className="product-content">
               <Link to={`/shop/${product.id}`}>{product.name}</Link>
-              <p className="productRating">
-                <Rating />
-              </p>
-              <h6>${product.price}</h6>
+              <p className="productRating">{/* <Rating /> */}</p>
+              <h6>৳{product.price}</h6>
               <p>{product.seller}</p>
             </div>
           </div>

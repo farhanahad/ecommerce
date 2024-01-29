@@ -1,7 +1,7 @@
 /* eslint-disable react/prop-types */
 
 import { Link } from "react-router-dom";
-import Rating from "../../components/Sidebar/rating";
+//import Rating from "../../components/Sidebar/rating";
 
 const ProductCards = ({ products, GridList }) => {
   // console.log(products.map(val => console.log(val.id)))
@@ -34,9 +34,7 @@ const ProductCards = ({ products, GridList }) => {
               <h5>
                 <Link to={`/shop/${product.id}`}>{product.name}</Link>
               </h5>
-              <p className="productRating">
-                <Rating />
-              </p>
+              <p className="productRating">{/* <Rating /> */}</p>
               <h6>৳{product.price}</h6>
             </div>
           </div>

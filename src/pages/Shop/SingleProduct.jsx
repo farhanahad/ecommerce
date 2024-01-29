@@ -11,10 +11,10 @@ import "swiper/css";
 
 // import required modules
 import { Autoplay } from "swiper/modules";
-import Review from "../../components/Review";
-import MostPopularPost from "../../components/Sidebar/MostPopularPost";
+//import Review from "../../components/Review";
+//import MostPopularPost from "../../components/Sidebar/MostPopularPost";
 import ProductDisplay from "./ProductDisplay";
-const reviwtitle = "Add a Review";
+//const reviwtitle = "Add a Review";
 
 const SingleProduct = () => {
   const [product, setProduct] = useState([]);
